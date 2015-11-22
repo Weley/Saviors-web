@@ -19,8 +19,8 @@ defined('_JEXEC') or die('Restricted access'); ?>
 	<div id="warrior">
         <div class="title"><?php echo JText::_('WARRIOR'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($warriorclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $warriorclass1 ?>"><?php endif; ?> 
-		<?php if($warriorclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $warriorclass2 ?>"><?php endif; ?> 
+		<?php if($warriorclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(1) ?>"><?php endif; ?> 
+		<?php if($warriorclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($warriorStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($warriorInfo) ?>
 		<?php endif; ?>
@@ -33,9 +33,9 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="paladin">
         <div class="title"><?php echo JText::_('PALADIN'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($paladinclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $paladinclass1 ?>"><?php endif; ?> 
-		<?php if($paladinclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $paladinclass2 ?>"><?php endif; ?> 
-		<?php if($paladinclass3) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $paladinclass3 ?>"><?php endif; ?> 
+		<?php if($paladinclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(1) ?>"><?php endif; ?> 
+		<?php if($paladinclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(2) ?>"><?php endif; ?> 
+		<?php if($paladinclass3) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($paladinStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($paladinInfo) ?> 
 		<?php endif; ?>
@@ -48,7 +48,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="hunter">
         <div class="title"><?php echo JText::_('HUNTER'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($hunterclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $hunterclass1 ?>"><?php endif; ?> 
+		<?php if($hunterclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($hunterStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($hunterInfo) ?> 
 		<?php endif; ?> 
@@ -61,7 +61,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="rogue">
         <div class="title"><?php echo JText::_('ROGUE'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($rogueclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $rogueclass1 ?>"><?php endif; ?> 
+		<?php if($rogueclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($rogueStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($rogueInfo) ?> 
 		<?php endif; ?> 
@@ -74,8 +74,8 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="priest">
         <div class="title"><?php echo JText::_('PRIEST'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($priestclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $priestclass1 ?>"><?php endif; ?> 
-		<?php if($priestclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $priestclass2 ?>"><?php endif; ?> 
+		<?php if($priestclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(2) ?>"><?php endif; ?> 
+		<?php if($priestclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($priestStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($priestInfo) ?> 
 		<?php endif; ?> 
@@ -88,8 +88,8 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="deathknight">
         <div class="title"><?php echo JText::_('DEATHKNIGHT'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($deathknightclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $deathknightclass1 ?>"><?php endif; ?> 
-		<?php if($deathknightclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $deathknightclass2 ?>"><?php endif; ?> 
+		<?php if($deathknightclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(1) ?>"><?php endif; ?> 
+		<?php if($deathknightclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($deathknightStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($deathknightInfo) ?> 
 		<?php endif; ?> 
@@ -102,8 +102,8 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="shaman">
         <div class="title"><?php echo JText::_('SHAMAN'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($shamanclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $shamanclass1 ?>"><?php endif; ?> 
-		<?php if($shamanclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $shamanclass2 ?>"><?php endif; ?> 
+		<?php if($shamanclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(2) ?>"><?php endif; ?> 
+		<?php if($shamanclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($shamanStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($shamanInfo) ?> 
 		<?php endif; ?> 
@@ -116,7 +116,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="mage">
         <div class="title"><?php echo JText::_('MAGE'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($mageclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $mageclass1 ?>"><?php endif; ?> 
+		<?php if($mageclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div> 
 	  <div class="info"><?php if($mageStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($mageInfo) ?> 
 		<?php endif; ?> 
@@ -129,7 +129,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="warlock">
         <div class="title"><?php echo JText::_('WARLOCK'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($warlockclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $warlockclass1 ?>"><?php endif; ?> 
+		<?php if($warlockclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($warlockStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($warlockInfo) ?> 
 		<?php endif; ?> 
@@ -142,9 +142,9 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="monk">
         <div class="title"><?php echo JText::_('MONK'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($monkclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $monkclass1 ?>"><?php endif; ?> 
-		<?php if($monkclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $monkclass2 ?>"><?php endif; ?> 
-		<?php if($monkclass3) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $monkclass3 ?>"><?php endif; ?> 
+		<?php if($monkclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(1) ?>"><?php endif; ?> 
+		<?php if($monkclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(2) ?>"><?php endif; ?> 
+		<?php if($monkclass3) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($monkStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($monkInfo) ?> 
 		<?php endif; ?> 
@@ -157,9 +157,9 @@ defined('_JEXEC') or die('Restricted access'); ?>
   <div id="druid">
         <div class="title"><?php echo JText::_('DRUID'); ?></div><div class="clear"></div>
 		<div class="class"><div class="rolle"><?php echo JText::_('ROLL'); ?></div>
-		<?php if($druidclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $druidclass1 ?>"><?php endif; ?> 
-		<?php if($druidclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $druidclass2 ?>"><?php endif; ?> 
-		<?php if($druidclass3) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo $druidclass3 ?>"><?php endif; ?> 
+		<?php if($druidclass1) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(1) ?>"><?php endif; ?> 
+		<?php if($druidclass2) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(2) ?>"><?php endif; ?> 
+		<?php if($druidclass3) : ?><img src="<?php echo $modulePath ?>tmpl/images/<?php echo mod_klassensuche_searchHelper::getClassIcon(3) ?>"><?php endif; ?> 
 		</div>
 	  <div class="info"><?php if($druidStatus) : ?><?php print mod_klassensuche_searchHelper::getClassInfo($druidInfo) ?> 
 		<?php endif; ?> 
@@ -307,7 +307,6 @@ defined('_JEXEC') or die('Restricted access'); ?>
 	 </div></a>
 	<?php } ?>
  <?php if(mod_klassensuche_searchHelper::domainCheck()) : ?>
-	<div id="klassensuche_copyright"><a href=http://www.cmstyles.de target=_blank>powered by Cmstyles.de</a></div>
 <?php endif; ?> 
 </div>
 

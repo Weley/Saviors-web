@@ -41,6 +41,19 @@ class mod_klassensuche_searchHelper{
 		return ($info);
 	}
 	
+	function getClassIcon($classIcon){      
+	if($classIcon == 1)
+		$icon = "tank.png";
+	else if ($classIcon == 2) 
+		$icon = "heal.png";
+	else if ($classIcon == 3) 
+		$icon = "dd.png";
+    else
+      $info = "";
+  
+	return ($icon);
+	}
+	
 	function domainCheck(){
     $host = $_SERVER['HTTP_HOST'];
     $check = true;
