@@ -80,52 +80,12 @@ $monkInfo         = $params->get('monk_info');
 $monkclass1	   = $params->get('monk_class1');
 $monkclass2	   = $params->get('monk_class2');
 $monkclass3	   = $params->get('monk_class3');
+
+
 $allStatus_wc       = $params->get('all_status_wc');
 $allInfo_wc         = $params->get('all_info_wc');
 $allStatus_sw       = $params->get('all_status_sw');
 $allInfo_sw         = $params->get('all_info_sw');
-$jedi_knightStatus       = $params->get('jedi_knight_status');
-$jedi_knightInfo         = $params->get('jedi_knight_info');
-$jedi_knightclass1	   	 = $params->get('jedi_knight_class1');
-$jedi_knightclass2	     = $params->get('jedi_knight_class2');
-$jedi_knightclass3	     = $params->get('jedi_knight_class3');
-$headhunterStatus        = $params->get('headhunter_status');
-$headhunterInfo          = $params->get('headhunter_info');
-$headhunterclass1	     = $params->get('headhunter_class1');
-$headhunterclass2	     = $params->get('headhunter_class2');
-$headhunterclass3	     = $params->get('headhunter_class3');
-$sith_warriorStatus      = $params->get('sith_warrior_status');
-$sith_warriorInfo        = $params->get('sith_warrior_info');
-$sith_warriorclass1	     = $params->get('sith_warrior_class1');
-$sith_warriorclass2	     = $params->get('sith_warrior_class2');
-$sith_warriorclass3	     = $params->get('sith_warrior_class3');
-$trooperStatus       = $params->get('trooper_status');
-$trooperInfo         = $params->get('trooper_info');
-$trooperclass1	     = $params->get('trooper_class1');
-$trooperclass2	     = $params->get('trooper_class2');
-$trooperclass3	     = $params->get('trooper_class3');
-$smugglerStatus       = $params->get('smuggler_status');
-$smugglerInfo         = $params->get('smuggler_info');
-$smugglerclass1	     = $params->get('smuggler_class1');
-$smugglerclass2	     = $params->get('smuggler_class2');
-$smugglerclass3	     = $params->get('smuggler_class3');
-$empire_agentStatus       = $params->get('empire_agent_status');
-$empire_agentInfo         = $params->get('empire_agent_info');
-$empire_agentclass1	     = $params->get('empire_agent_class1');
-$empire_agentclass2	     = $params->get('empire_agent_class2');
-$empire_agentclass3	     = $params->get('empire_agent_class3');
-$sith_inquisitorStatus       = $params->get('sith_inquisitor_status');
-$sith_inquisitorInfo         = $params->get('sith_inquisitor_info');
-$sith_inquisitorclass1	     = $params->get('sith_inquisitor_class1');
-$sith_inquisitorclass2	     = $params->get('sith_inquisitor_class2');
-$sith_inquisitorclass3	     = $params->get('sith_inquisitor_class3');
-$ambassadorStatus       = $params->get('ambassador_status');
-$ambassadorInfo         = $params->get('ambassador_info');
-$ambassadorclass1	     = $params->get('ambassador_class1');
-$ambassadorclass2	     = $params->get('ambassador_class2');
-$ambassadorclass3	     = $params->get('ambassador_class3');
-
-
 
 require(JModuleHelper::getLayoutPath('mod_klassensuche'));
 require_once ('helper.php');

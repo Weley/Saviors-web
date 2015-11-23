@@ -54,35 +54,11 @@
 #klassensuche_all_sw {
     background: url("../images/grunge-halb/sw-tor-all-bg.png") no-repeat scroll 0 0 transparent;
 }
-#jedi_knight {
-    background: url("../images/grunge-halb/sw-tor-jedi-knight-bg.png") no-repeat scroll 0 0 transparent;
-}
-#headhunter {
-    background: url("../images/grunge-halb/sw-tor-headhunter-bg.png") no-repeat scroll 0 0 transparent;
-}
-#sith_warrior {
-    background: url("../images/grunge-halb/sw-tor-sith-warrior-bg.png") no-repeat scroll 0 0 transparent;
-}
-#trooper {
-    background: url("../images/grunge-halb/sw-tor-trooper-bg.png") no-repeat scroll 0 0 transparent;
-}
-#smuggler {
-    background: url("../images/grunge-halb/sw-tor-smuggler-bg.png") no-repeat scroll 0 0 transparent;
-}
-#empire_agent {
-    background: url("../images/grunge-halb/sw-tor-empire-agent-bg.png") no-repeat scroll 0 0 transparent;
-}
-#sith_inquisitor {
-    background: url("../images/grunge-halb/sw-tor-sith_inquisitor-bg.png") no-repeat scroll 0 0 transparent;
-}
-#ambassador{
-    background: url("../images/grunge-halb/sw-tor-ambassador-bg.png") no-repeat scroll 0 0 transparent;
-}
 #trenner {
     height: 30px;
     width: 20px;
 }
-#warrior, #paladin, #hunter, #rogue, #priest, #deathknight, #shaman, #mage, #warlock, #druid, #monk, #klassensuche_all_wc, #klassensuche_all_sw, #jedi_knight, #headhunter, #sith_warrior, #trooper, #smuggler, #empire_agent, #sith_inquisitor, #ambassador {
+#warrior, #paladin, #hunter, #rogue, #priest, #deathknight, #shaman, #mage, #warlock, #druid, #monk, #klassensuche_all_wc, #klassensuche_all_sw {
     height: 50px;
     width: 168px;
 	overflow:hidden;
