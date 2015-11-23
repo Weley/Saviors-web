@@ -53,6 +53,14 @@
             <option value="hide">JHIDE</option>
             <option value="show">JSHOW</option>
         </field>
+		<field name="nightmare" type="radio" default="show" label="MOD_WOWBOSS_LEGION_NIGHTMARE" description="MOD_WOWBOSS_RAID_DESC">
+            <option value="hide">JHIDE</option>
+            <option value="show">JSHOW</option>
+        </field>
+		<field name="suramarpalace" type="radio" default="show" label="MOD_WOWBOSS_LEGION_SURAMAR_PALACE" description="MOD_WOWBOSS_RAID_DESC">
+            <option value="hide">JHIDE</option>
+            <option value="show">JSHOW</option>
+        </field>
 		<field type="spacer" name="myspacer" hr="true" />
         <field name="highmaul-expview" type="radio" default="yes" label="MOD_WOWBOSS_DRAENOR_HIGHMAUL_TOGGLE" description="MOD_WOWBOSS_TOGGLE_DESC">
             <option value="no">JNO</option>
@@ -66,6 +74,15 @@
             <option value="no">JNO</option>
             <option value="yes">JYES</option>
         </field>
+		<field name="nightmare-expview" type="radio" default="yes" label="MOD_WOWBOSS_LEGION_NIGHTMARE_TOGGLE" description="MOD_WOWBOSS_TOGGLE_DESC">
+            <option value="no">JNO</option>
+            <option value="yes">JYES</option>
+        </field>
+		<field name="suramarpalace-expview" type="radio" default="yes" label="MOD_WOWBOSS_LEGION_SURAMAR_PALACE_TOGGLE" description="MOD_WOWBOSS_TOGGLE_DESC">
+            <option value="no">JNO</option>
+            <option value="yes">JYES</option>
+        </field>
+
 
 	</fieldset>
     
@@ -199,8 +216,7 @@
         <field name="blackhandlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_BLACKHAND_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
     </fieldset>  
 
-
-    <fieldset name="MOD_WOWBOSS_DRAENOR_HELLFIRE_CITADEL">
+	<fieldset name="MOD_WOWBOSS_DRAENOR_HELLFIRE_CITADEL">
         <field name="ironreaver" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_IRONREAVER" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
             <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
             <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
@@ -293,6 +309,28 @@
         <field name="xhulhoraclink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_XHULHORAC_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
         <field name="mannorothlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_MANNOROTH_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
         <field name="archimondelink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_ARCHIMONDE_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+	</fieldset>  
+
+    <fieldset name="MOD_WOWBOSS_LEGION_NIGHTMARE">
+        <field name="nightmare1" type="list" default="undefeated" label="MOD_WOWBOSS_LEGION_NIGHTMARE1" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        
+        <field name="ironreaverlink" type="text" default="" label="MOD_WOWBOSS_LEGION_NIGHTMARE1_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+	</fieldset>  
+	
+	<fieldset name="MOD_WOWBOSS_LEGION_SURAMAR_PALACE">
+        <field name="suramarpalace1" type="list" default="undefeated" label="MOD_WOWBOSS_LEGION_SURAMAR_PALACE1" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        
+        <field name="ironreaverlink" type="text" default="" label="MOD_WOWBOSS_LEGION_SURAMAR_PALACE1_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
 	</fieldset>  
 
 	

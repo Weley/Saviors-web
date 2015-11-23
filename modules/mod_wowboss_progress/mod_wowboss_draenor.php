@@ -97,7 +97,7 @@ $raids = array(
             new Boss( "archimonde" , JText::_('MOD_WOWBOSS_DRAENOR_ARCHIMONDE') , $params->get('archimonde'), $params->get('archimondelink') ),
         ),
         $params->get('hellfirecitadel-expview')
-    )	
+    ),			// The Emerald Nightmare    $raid4 = new Raid(        "nightmare",        JText::_('MOD_WOWBOSS_LEGION_NIGHTMARE'),        $params->get('nightmare'),        // Boss List ("id","name","show/hide","status")        array(            new Boss( "nightmare1" , JText::_('MOD_WOWBOSS_LEGION_NIGHTMARE1') , $params->get('nightmare1'), $params->get('nightmare1link') ),        ),        $params->get('nightmare-expview')    ),			// Suramar Palace    $raid5 = new Raid(        "suramarpalace",        JText::_('MOD_WOWBOSS_LEGION_SURAMAR_PALACE'),        $params->get('suramarpalace'),        // Boss List ("id","name","show/hide","status")        array(            new Boss( "suramarpalace" , JText::_('MOD_WOWBOSS_LEGION_SURAMAR_PALACE1') , $params->get('suramarpalace1'), $params->get('suramarpalace1link') ),        ),        $params->get('suramarpalace-expview')    )
 
 );
 
