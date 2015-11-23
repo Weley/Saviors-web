@@ -148,6 +148,15 @@
 				<field name="druid_class2" type="checkbox" value="heal.png" default="" label="HEAL" description="INFORMATION" />
 				<field name="druid_class3" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
 				<field name="druid_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
+				<field type="spacer" name="spacer11!" hr="true" />
+				
+				<field name="demonhunter_status" type="radio" default="0" label="DEMONHUNTER" description=" ">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="demonhunter_class1" type="checkbox" value="tank.png" default="" label="TANK" description="INFORMATION" />
+				<field name="demonhunter_class2" type="checkbox" value="dd.png" default="" label="DD" description="INFORMATION" />
+				<field name="demonhunter_info" type="text" default="" label="INFORMATION2" description="INFORMATION" size="50" />
 			</fieldset>
 			
 			
@@ -157,7 +166,7 @@
 					<option value="0">JNO</option>
 				</field>
 				<field name="all_info_wc" type="text" default="" label="INFORMATION3" description="INFORMATION" size="50" />
-				<field type="spacer" name="spacer11  !" hr="true" />
+				<field type="spacer" name="spacer12  !" hr="true" />
 				<field name="all_status_sw" type="radio" default="0" label="ALL_SW_BACKEND" description=" ">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>

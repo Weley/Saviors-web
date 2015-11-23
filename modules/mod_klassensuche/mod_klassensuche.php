@@ -75,12 +75,16 @@ $druidInfo         = $params->get('druid_info');
 $druidclass1	   = $params->get('druid_class1');
 $druidclass2	   = $params->get('druid_class2');
 $druidclass3	   = $params->get('druid_class3');
-$monkStatus       = $params->get('monk_status');
-$monkInfo         = $params->get('monk_info');
-$monkclass1	   = $params->get('monk_class1');
-$monkclass2	   = $params->get('monk_class2');
-$monkclass3	   = $params->get('monk_class3');
-
+$monkStatus        = $params->get('monk_status');
+$monkInfo          = $params->get('monk_info');
+$monkclass1	   	   = $params->get('monk_class1');
+$monkclass2	       = $params->get('monk_class2');
+$monkclass3	       = $params->get('monk_class3');
+$demonhunterStatus = $params->get('demonhunter_status');
+$demonhunterInfo   = $params->get('demonhunter_info');
+$demonhunterclass1 = $params->get('demonhunter_class1');
+$demonhunterclass2 = $params->get('demonhunter_class2');
+$demonhunterclass3 = $params->get('demonhunter_class3');
 
 $allStatus_wc       = $params->get('all_status_wc');
 $allInfo_wc         = $params->get('all_info_wc');
