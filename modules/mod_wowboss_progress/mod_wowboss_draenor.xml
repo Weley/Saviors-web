@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.3.6" client="site" method="upgrade">
+<name>WoW Boss - Draenor Edition</name>
+<author>Tolrem</author>
+<version>6.2.0</version>
+<creationDate>29th June 2015</creationDate>
+<description>MOD_WOWBOSS_DRAENOR_DESC</description>
+
+
+
+<files>
+    <filename>mod_wowboss_draenor.xml</filename>
+    <filename module="mod_wowboss_draenor">mod_wowboss_draenor.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+</files>
+    
+<media folder="media" destination="mod_wowboss_draenor">
+    <folder>img</folder>
+    <folder>css</folder>
+    <folder>js</folder>
+</media>
+    
+<languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.mod_wowboss_draenor.ini</language>
+    <language tag="en-GB">en-GB/en-GB.mod_wowboss_draenor.sys.ini</language>
+    <language tag="fr-FR">fr-FR/fr-FR.mod_wowboss_draenor.ini</language>
+    <language tag="fr-FR">fr-FR/fr-FR.mod_wowboss_draenor.sys.ini</language>
+    <language tag="de-DE">de-DE/de-DE.mod_wowboss_draenor.ini</language>
+    <language tag="de-DE">de-DE/de-DE.mod_wowboss_draenor.sys.ini</language>
+    <language tag="es-ES">es-ES/es-ES.mod_wowboss_draenor.ini</language>
+    <language tag="es-ES">es-ES/es-ES.mod_wowboss_draenor.sys.ini</language>
+    <language tag="it-IT">it-IT/it-IT.mod_wowboss_draenor.ini</language>
+    <language tag="it-IT">it-IT/it-IT.mod_wowboss_draenor.sys.ini</language>
+    <language tag="ru-RU">ru-RU/ru-RU.mod_wowboss_draenor.ini</language>
+    <language tag="ru-RU">ru-RU/ru-RU.mod_wowboss_draenor.sys.ini</language>
+</languages>
+
+<config>
+<fields name="params">
+	<fieldset name="basic">
+		<field name="highmaul" type="radio" default="show" label="MOD_WOWBOSS_DRAENOR_HIGHMAUL" description="MOD_WOWBOSS_RAID_DESC">
+            <option value="hide">JHIDE</option>
+            <option value="show">JSHOW</option>
+        </field>
+        <field name="foundry" type="radio" default="show" label="MOD_WOWBOSS_DRAENOR_BLACKROCK_FOUNDRY" description="MOD_WOWBOSS_RAID_DESC">
+            <option value="hide">JHIDE</option>
+            <option value="show">JSHOW</option>
+        </field>
+        <field name="hellfirecitadel" type="radio" default="show" label="MOD_WOWBOSS_DRAENOR_HELLFIRE_CITADEL" description="MOD_WOWBOSS_RAID_DESC">
+            <option value="hide">JHIDE</option>
+            <option value="show">JSHOW</option>
+        </field>
+		<field type="spacer" name="myspacer" hr="true" />
+        <field name="highmaul-expview" type="radio" default="yes" label="MOD_WOWBOSS_DRAENOR_HIGHMAUL_TOGGLE" description="MOD_WOWBOSS_TOGGLE_DESC">
+            <option value="no">JNO</option>
+            <option value="yes">JYES</option>
+        </field>
+        <field name="foundry-expview" type="radio" default="yes" label="MOD_WOWBOSS_DRAENOR_FOUNDRY_TOGGLE" description="MOD_WOWBOSS_TOGGLE_DESC">
+            <option value="no">JNO</option>
+            <option value="yes">JYES</option>
+        </field>
+        <field name="hellfirecitadel-expview" type="radio" default="yes" label="MOD_WOWBOSS_DRAENOR_HELLFIRE_CITADEL_TOGGLE" description="MOD_WOWBOSS_TOGGLE_DESC">
+            <option value="no">JNO</option>
+            <option value="yes">JYES</option>
+        </field>
+
+	</fieldset>
+    
+    <fieldset name="MOD_WOWBOSS_DRAENOR_HIGHMAUL">
+        <field name="kargath" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_KARGATH" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="butcher" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_BUTCHER" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="brackenspore" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_BRACKENSPORE" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="tectus" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_TECTUS" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="twinogron" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_TWIN_OGRON" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="koragh" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_KORAGH" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="margok" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_MARGOK" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        
+
+        <field name="kargathlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_KARGATH_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="butcherlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_BUTCHER_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="brackensporelink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_BRACKENSPORE_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="tectuslink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_TECTUS_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="twinogronlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_TWIN_OGRON_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="koraghlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_KORAGH_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="margoklink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_MARGOK_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+
+        
+    </fieldset>   
+    
+    <fieldset name="MOD_WOWBOSS_DRAENOR_BLACKROCK_FOUNDRY">
+        <field name="oregorger" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_OREGORGER" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="gruul" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_GRUUL" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="furnace" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_FURNACE" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="hansgar" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_HANSGAR" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="kagraz" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_KAGRAZ" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="kromog" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_KROMOG" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="darmac" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_DARMAC" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="thogar" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_THOGAR" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="maidens" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_MAIDENS" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="blackhand" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_BLACKHAND" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        
+        <field name="oregorgerlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_OREGORGER_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="gruullink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_GRUUL_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="furnacelink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_FURNACE_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="hansgarlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_HANSGAR_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="kagrazlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_KAGRAZ_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="kromoglink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_KROMOG_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="darmaclink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_DARMAC_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="thogarlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_THOGAR_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="maidenslink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_MAIDENS_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="blackhandlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_BLACKHAND_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+    </fieldset>  
+
+
+    <fieldset name="MOD_WOWBOSS_DRAENOR_HELLFIRE_CITADEL">
+        <field name="ironreaver" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_IRONREAVER" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="hellfireassault" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_HELLFIREASSAULT" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="kormrok" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_KORMROK" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="gorefiend" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_GOREFIEND" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="hellfirehighcouncil" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_HELLFIREHIGHCOUNCIL" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="kilroggdeadeye" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_KILROGGDEADEYE" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="shadowlordiskar" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_SHADOWLORDISKAR" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="socrethartheeternal" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_SOCRETHARTHEETERNAL" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="tyrantvelhari" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_TYRANTVELHARI" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="fellordzakuun" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_FELLORDZAKUUN" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="xhulhorac" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_XHULHORAC" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="mannoroth" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_MANNOROTH" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        <field name="archimonde" type="list" default="undefeated" label="MOD_WOWBOSS_DRAENOR_ARCHIMONDE" description="MOD_WOWBOSS_DRAENOR_BOSS_OPTIONS">
+            <option value="undefeated">MOD_WOWBOSS_DRAENOR_UNDEFEATED</option>
+            <option value="normal">MOD_WOWBOSS_DRAENOR_NORMAL</option>
+            <option value="heroic">MOD_WOWBOSS_DRAENOR_HEROIC</option>
+            <option value="mythic">MOD_WOWBOSS_DRAENOR_MYTHIC</option>
+        </field>
+        
+        <field name="ironreaverlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_IRONREAVER_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="hellfireassaultlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_HELLFIREASSAULT_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="kormroklink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_KORMROK_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="gorefiendlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_GOREFIEND_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="hellfirehighcouncillink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_HELLFIREHIGHCOUNCIL_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="kilroggdeadeyelink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_KILROGGDEADEYE_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="shadowlordiskarlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_SHADOWLORDISKAR_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="socrethartheeternallink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_SOCRETHARTHEETERNAL_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="tyrantvelharilink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_TYRANTVELHARI_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="fellordzakuunlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_FELLORDZAKUUN_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="xhulhoraclink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_XHULHORAC_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="mannorothlink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_MANNOROTH_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+        <field name="archimondelink" type="text" default="" label="MOD_WOWBOSS_DRAENOR_ARCHIMONDE_LINK" description="MOD_WOWBOSS_DRAENOR_BOSS_LINK" />
+	</fieldset>  
+
+	
+	
+	<fieldset name="advanced">
+        <field name="loadjquery" type="radio" default="no" label="MOD_WOWBOSS_DRAENOR_JQUERY" description="MOD_WOWBOSS_DRAENOR_JQUERY_DESC">
+            <option value="yes">JYES</option>
+            <option value="no">JNO</option>
+        </field>
+		<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+		<field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+	</fieldset>
+</fields>
+</config>
+    
+<updateservers>
+    <server type="extension" priority="1" name="WoW Boss Draenor Module Update">http://update.tolrem.net/wow_boss_draenor/wow_boss_draenor_update.xml</server>
+</updateservers>    
+
+</extension>
